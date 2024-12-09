@@ -1,0 +1,252 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --a4-width: 210mm;
+  --a4-height: 297mm;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f0f0;
+  justify-content: center;
+  padding: 20px;
+}
+
+.container {
+  width: var(--a4-width);
+  min-height: var(--a4-height);
+  background: white;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Add close button styles */
+.close-button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #c04000;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  z-index: 1000;
+  transition: background 0.3s;
+}
+
+.close-button:hover {
+  background: #e26d2d;
+}
+
+/* Update product grid for A4 size */
+.product5-grid {
+  width: 100%;
+  max-width: 180mm;
+  margin: 20px auto 40px auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.product-menu {
+  width: 100%;
+  max-width: 180mm;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+  background: white;
+}
+
+.particular-product {
+  background-color: white;
+  border: 2px solid orange;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  width: 200px;
+}
+
+header {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(rgb(192, 64, 0), rgb(226, 109, 45));
+  padding: 60px;
+  border-radius: 8px;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+
+.header h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.header p {
+  font-size: 1.2em;
+}
+
+.thanksgiving-text{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+.logo h1 {
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+.text-content {
+  text-align: center;
+}
+
+.text-content h2 {
+  font-size: 2em;
+  margin-bottom: 5px;
+}
+
+.text-content p {
+  font-size: 1.2em;
+}
+
+.header-image img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Product Grid */
+.product5-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.product1-card {
+  background: #fffbe8;
+  border: 2px solid #f39c12;
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product1-card h3 {
+  font-size: 1.2em;
+  color: #c04000;
+  margin-bottom: 10px;
+}
+
+.product1-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+.product1-card p {
+  font-size: 1.1em;
+  color: #007b00;
+  font-weight: bold;
+}
+
+/*section section starts*/
+.products {
+  padding: 40px 20px;
+  background-color: lightgray;
+  text-align: center;
+}
+  
+  
+  .products h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: black;
+  }
+  
+  .products p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: black;
+  }
+  
+  .product-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+gap: 20px;}
+
+.particular-product {
+  background-color: beige;
+  border: 2px solid orange;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px black;
+  padding: 20px;
+  text-align: center;
+  width: 200px;
+
+}
+.particular-product img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+}
+
+.particular-product h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px; 
+  color: black;
+}
+
+.particular-product p {
+  font-size: 14px;
+  color: green;
+  margin-bottom: 5px;
+}
+
+/* Add styles for section headings */
+h1 {
+  width: 100%;
+  text-align: center;
+  margin: 30px 0;
+  color: #333;
+  clear: both;
+}
+
+/* Remove any floating or positioning issues */
+.container > * {
+  clear: both;
+  width: 100%;
+}
+
